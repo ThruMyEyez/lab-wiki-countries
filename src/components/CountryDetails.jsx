@@ -78,6 +78,6 @@ const CountryDetails = ({ countries }) => {
 export default CountryDetails;
 /* 
                 <li>
-                  <a href="/CHE">Switzerland</a>
+                  <a href="/CHE">Switzerland</a> 
                 </li>
 */
