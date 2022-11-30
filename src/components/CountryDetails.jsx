@@ -13,11 +13,10 @@ const CountryDetails = ({ countries }) => {
     axios
       .get(`https://ih-countries-api.herokuapp.com/countries/${id}`)
       .then((result) => {
-        const countryData = result.data;
         setNeighbors(
           countries.filter((neighbor) => neighbor.borders.includes(id))
         );
-        setCountry(countryData);
+        setCountry(result.data);
       });
   }, [id, countries]); //[id] instead of [], because the first time this component gets rendered it always includes the "id" and cannot be mounted without.
 
