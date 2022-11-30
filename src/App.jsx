@@ -11,14 +11,11 @@ const App = () => {
   useEffect(() => {
     axios
       .get('https://ih-countries-api.herokuapp.com/countries')
-      .then((results) => {
-        const countriesFromAPI = results.data;
-        setCountries(countriesFromAPI);
-      });
+      .then((results) => setCountries(results.data));
   }, []);
 
   return (
-    <div className="App">
+    <main className="App">
       <Navbar />
 
       {(countries && (
@@ -34,7 +31,7 @@ const App = () => {
           </div>
         </div>
       )) || <h1>Loading...</h1>}
-    </div>
+    </main>
   );
 };
 

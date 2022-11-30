@@ -25,5 +25,6 @@ code {
   border: 3px solid transparent;
   background-clip: padding-box;
   border-radius: 1rem;
+  height: 10vh;
   background-color: rgba(95, 158, 160, 0.29);
 }
